@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: p1demo-deployment
+  labels:
+    app: p1demo
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: p1demo
+  template:
+    metadata:
+      labels:
+        app: p1demo
+    spec:
+      containers:
+      - name: p1demo
+        image:  toomanycooks/project1:latest
+        ports:
+        - containerPort: 8180
