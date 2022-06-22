@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: p1demo-lb
+spec:
+  type: LoadBalancer
+  selector:
+    app: p1demo
+  ports:
+  - port: 80
+    targetPort: 80
+    nodePort: 30004
