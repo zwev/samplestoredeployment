@@ -1,5 +1,3 @@
-TEAM MEMBERS: David Delgadeo, Charles Harris, Brian Cunningham, Ari Ochoa
-
 * Java
 * Maven
 * Spring Boot
